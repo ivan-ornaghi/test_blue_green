@@ -9,6 +9,8 @@ spec:
     matchLabels:
       app: my-app
       version: blue
+      environment: blue
+      environment: green
   template:
     metadata:
       labels:
@@ -31,11 +33,13 @@ spec:
     matchLabels:
       app: my-app
       version: green
+      environment: green
   template:
     metadata:
       labels:
         app: my-app
         version: green
+        environment: green
     spec:
       containers:
         - name: app

@@ -1,2 +1,4 @@
+environment: green
+
 deployment:
   activeVersion: green

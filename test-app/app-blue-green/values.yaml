@@ -1,5 +1,7 @@
 replicaCount: 2
 
+environment: blue
+
 image:
   repository: ivan198975/test-blue-green
   tagBlue: "blue-1.0"

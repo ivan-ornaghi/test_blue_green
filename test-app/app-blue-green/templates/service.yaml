@@ -7,6 +7,7 @@ spec:
   selector:
     app: my-app
     version: {{ .Values.deployment.activeVersion }}
+    environment: {{ .Values.environment }}
   ports:
     - protocol: TCP
       port: {{ .Values.service.port }}
