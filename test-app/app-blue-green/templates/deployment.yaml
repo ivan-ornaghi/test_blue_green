@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: my-app-blue
 spec:
-  replicas: 2
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: my-app
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: stefanprodan/podinfo:blue
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tagBlue }}"
           ports:
             - containerPort: 9898
 ---
@@ -26,7 +26,7 @@ kind: Deployment
 metadata:
   name: my-app-green
 spec:
-  replicas: 2
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: my-app
@@ -39,7 +39,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: stefanprodan/podinfo:green
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tagGreen }}"
           ports:
             - containerPort: 9898
 ---

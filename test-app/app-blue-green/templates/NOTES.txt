@@ -1,0 +1,3 @@
+Use this command below after your deploy
+
+helm list -n app-test
