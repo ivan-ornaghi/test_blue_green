@@ -1,9 +1,9 @@
 replicaCount: 2
 
 image:
-  repository: stefanprodan/podinfo
-  tagBlue: "blue"
-  tagGreen: "green"
+  repository: ivan198975/test-blue-green:blue-1.0
+  tagBlue: "blue-1.0"
+  tagGreen: "green-1.0"
   pullPolicy: IfNotPresent
 
 deployment:
