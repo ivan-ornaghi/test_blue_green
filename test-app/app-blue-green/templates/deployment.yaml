@@ -19,7 +19,7 @@ spec:
         - name: app
           image: "{{ .Values.image.repository }}:{{ .Values.image.tagBlue }}"
           ports:
-            - containerPort: 9898
+            - containerPort: 80
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -41,5 +41,5 @@ spec:
         - name: app
           image: "{{ .Values.image.repository }}:{{ .Values.image.tagGreen }}"
           ports:
-            - containerPort: 9898
+            - containerPort: 80
 ---

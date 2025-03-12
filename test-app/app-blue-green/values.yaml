@@ -12,4 +12,4 @@ deployment:
 service:
   type: NodePort  # Pode ser NodePort também
   port: 8000
-  targetPort: 9898
+  targetPort: 80
