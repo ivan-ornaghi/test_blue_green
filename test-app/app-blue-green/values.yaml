@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: ivan198975/test-blue-green:blue-1.0
+  repository: ivan198975/test-blue-green
   tagBlue: "blue-1.0"
   tagGreen: "green-1.0"
   pullPolicy: IfNotPresent
