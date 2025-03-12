@@ -10,12 +10,12 @@ spec:
       app: my-app
       version: blue
       environment: blue
-      environment: blue
   template:
     metadata:
       labels:
         app: my-app
         version: blue
+        environment: blue
     spec:
       containers:
         - name: app
