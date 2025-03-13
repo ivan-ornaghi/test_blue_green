@@ -67,3 +67,4 @@ kubectl port-forward svc/my-app -n default 9000:9000
 
 - > https://kind.sigs.k8s.io
 - > https://kubernetes.io/docs/concepts/
+- > https://argo-cd.readthedocs.io/en/stable/
