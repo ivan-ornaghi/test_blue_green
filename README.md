@@ -27,9 +27,9 @@ kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.pas
 > example: echo "repo.com" | base64 encode
   Put those values in the fields below.
 
-  url: ""
-  password: ""
-  username: ""
+  - url: ""
+  - password: ""
+  - username: ""
 
 kubectl apply -f argocd/applications-argocd-blue-green/secret-repo.yaml
 
