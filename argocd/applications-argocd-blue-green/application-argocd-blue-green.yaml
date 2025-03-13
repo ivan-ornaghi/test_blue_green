@@ -1,0 +1,16 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test-blue-green
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/ivan-ornaghi/test_blue_green
+    targetRevision: HEAD
+    path: test-app/app-blue-green
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+---
