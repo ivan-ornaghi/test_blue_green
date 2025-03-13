@@ -62,3 +62,8 @@ kubectl port-forward svc/my-app -n default 9000:9000
 - lsof -i :9000
 - kill -9 the process and run command below again.
 - kubectl port-forward svc/my-app -n default 9000:9000
+
+## Reference
+
+- > https://kind.sigs.k8s.io
+- > https://kubernetes.io/docs/concepts/
