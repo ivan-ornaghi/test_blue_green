@@ -50,15 +50,15 @@ kubectl port-forward svc/my-app -n default 9000:9000
 - > Now argocd shows that the application must be OutOfSync, So click in sync again.
 - > See in cluster kubernetes wiht this commands below:
 
-kubectl get pod -n default 
-kubectl get svc -n default
-kubectl describe svc my-app -n default -> probably need some endpoints.
-kubectl get pod -n default -o wide -> see IP of the pod, probably pod name is green.
+- kubectl get pod -n default 
+- kubectl get svc -n default
+- kubectl describe svc my-app -n default -> probably need some endpoints.
+- kubectl get pod -n default -o wide -> see IP of the pod, probably pod name is green.
 
 ## Now put in browser localhost:9000/
 
 - > If the browser be in the cache please follow this command below:
 
-lsof -i :9000
-kill -9 the process and run command below again.
-kubectl port-forward svc/my-app -n default 9000:9000
+- lsof -i :9000
+- kill -9 the process and run command below again.
+- kubectl port-forward svc/my-app -n default 9000:9000
